@@ -18,8 +18,7 @@ int main()
 	HDC hMemDC= NULL;
 	HBITMAP hImage, hOldBitmap = NULL, hBackBitmap;
 	BITMAP bit, hImage2;
-	//hImage = (HBITMAP)LoadImage(NULL, L"bitmap_location", IMAGE_BITMAP, 0, 0, LR_LOADFROMFILE | LR_CREATEDIBSECTION);
-	hImage = (HBITMAP)LoadImage(NULL, L"./Dimage.bmp", IMAGE_BITMAP, 0, 0, LR_LOADFROMFILE | LR_CREATEDIBSECTION);
+	hImage = (HBITMAP)LoadImage(NULL, L"bitmap_location", IMAGE_BITMAP, 0, 0, LR_LOADFROMFILE | LR_CREATEDIBSECTION);
 	hMemDC = CreateCompatibleDC(hdc);
 
 	// bitmap_size
